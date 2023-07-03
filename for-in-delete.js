@@ -89,7 +89,7 @@ const double = obj => {
 const secrets = obj => {
   let str = ''
   for(const key in obj) {
-    if(key.includes('sh'))
+    if(key.startsWith('sh'))
       str += obj[key]
   }
   return str
